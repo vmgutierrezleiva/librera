@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="es_CL">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="Víctor Manuel Gutiérrez">
+        <link type="text/plain" rel="author" href="http://domain/humans.txt" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+	<!-- Imágenes para ANDROID -->	
+	<link rel="shortcut icon" sizes="196x196" href="icono.png">
+	<meta name="mobile-web-app-capable" content="yes">
+		
+		<!-- Imágenes para iOS (la parte "precomposed" del atributo "rel" evita que iOS le asigne el efecto de brillo al ícono) -->
+	<link href="images/apple/icon.png" sizes="57x57" rel="apple-touch-icon-precomposed" />
+	<link href="images/apple/icon-72.png" sizes="72x72" rel="apple-touch-icon-precomposed" />
+	<link href="images/apple/icon-76.png" sizes="76x76" rel="apple-touch-icon-precomposed" />
+	<link href="images/apple/icon@2x.png" sizes="114x114" rel="apple-touch-icon-precomposed" />
+	<link href="images/apple/icon-120.png" sizes="120x120" rel="apple-touch-icon-precomposed" />
+	<link href="images/apple/icon-72@2x.png" sizes="144x144" rel="apple-touch-icon-precomposed" />
+	<link href="images/apple/icon-76@2x.png" sizes="152x152" rel="apple-touch-icon-precomposed" />
+
+	<link href="images/apple/touch-startup-image-320x460.png" media="(device-width: 320px)" rel="apple-touch-startup-image" />
+	<link href="images/apple/touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="images/apple/touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="images/apple/touch-startup-image-768x1004.png" media="(device-width: 768px) and (orientation: portrait)" rel="apple-touch-startup-image" />
+	<link href="images/apple/touch-startup-image-1536x2008.png" media="(device-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+	<link href="images/apple/touch-startup-image-1024x748.png" media="(device-width: 768px) and (orientation: landscape)" rel="apple-touch-startup-image" />
+	<link href="images/apple/touch-startup-image-2048x1496.png" media="(device-width: 768px)  and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+<!-- iOS webapp -->
+	<!-- Barra de estado transparente en iOS7 o semi-transparente negra en versiones anteriores -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Titulo bajo el ícono de la web app (máximo 13 caractéres) -->
+    <meta name="apple-mobile-web-app-title" content="Mi Web App">
+    <!-- Ajustar tamaño del sitio al dispositivo en que se está visualizando y bloquear zoom con 2 dedos -->
+	<meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable = no" />
+    <!-- Activar modo web app (pantalla completa) -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Evitar el auto ajuste del tamaño de texto al rotar el dispositivo -->
+    <style>
+        html { -webkit-text-size-adjust: 100%; }</style>
+		
+		
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="js/touch-menu-la.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        
+        <script></script>
+        <!--[if lt IE 9]><script src="dist/html5shiv.js"></script><![endif]-->
+    </head>
+    
+    <body>
+        <nav class="menu-inferior-movil flex-between">
+            <a id="1" class="inferior-movil-active">
+                <i class="material-icons">search</i>
+                <span>Buscar</span></a>
+            <a id="2">
+                <i class="material-icons">mail_outline</i>
+                <span>Movimientos</span></a>
+            <a id="3">
+                <i class="material-icons">directions_car</i>
+                <span>Autos</span></a>
+            <a id="4">
+                <i class="material-icons">more_horiz</i>
+                <span>Más</span></a>
+        </nav>
+        
+         <div class="filtrar btn02"><i class="material-icons m-16">filter_list</i> Filtrar busqueda</div>
+       
+        
+    <div class="flex-between paddinguno" style="border-bottom: 1px solid #f5f5f5;">
+        <img id="menu-open"  class="avatar" src="http://170.239.87.188/cdn/storage/Images/BBSxyQedGpSA2yXJ6/original/BBSxyQedGpSA2yXJ6.png">
+       
+        <h3 style="margin: 0 0 0 1em !important;">Mi cuenta</h3>
+        
+         <i class="material-icons btn04">menu</i>
+    </div>
+
+    <nav class="page-movil-cuenta">
+        <div id="1" class="btn02 flex-between">Mis movimientos <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div id="2" class="btn03 flex-between">Mis autos <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div id="3" class="btn04 flex-between">Mi cuenta <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div id="menu-open" class="flex-between">Ayuda <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div id="5" class="flex-between"> Como funciona <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div id="6" class="flex-between">Contacto <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div id="7" class="flex-between">Cerrar sesión <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+    </nav>
+    
+    <div class="touch-menu-la" id="menu"> 
+     
+           <nav class="page-movil-cuenta">
+       
+        <div class="flex-between"> Como funciona <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div class="flex-between">Contacto <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div class="flex-between">Cerrar sesión <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+               <div class="flex-between"> Como funciona <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div class="flex-between">Contacto <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div class="flex-between">Cerrar sesión <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+    </nav>
+</div>     
+        
+    <div class="page1"> 
+     
+            <div class="barra-filtrar" style="background-color: white !important; margin-top: 30%;">
+                <div class="flex-between" style="margin-bottom: .5em;">
+    <p style="word-break: break-all; font-size: .85em; font-family: 'objectivitymedium'; color: #707070; margin: 0;">Filtrar por:</p>
+         <button class="volver-atras">X</button>
+    </div>
+                
+    <nav class="page-movil-cuenta">
+        <div id="1" class="btn02 flex-between">Mis movimientos <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div id="2" class="btn03 flex-between">Mis autos <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div id="3" class="btn04 flex-between">Mi cuenta <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div id="4n" class="flex-between">Ayuda <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div id="5" class="flex-between"> Como funciona <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div id="6" class="flex-between">Contacto <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+        <div id="7" class="flex-between">Cerrar sesión <i class="material-icons volver-atras">keyboard_arrow_right</i></div>
+    </nav>
+</div>
+</div>
+        
+        
+    <div class="page2"> 
+    <div class="barra-menu-sticky flex-start paddinguno cerrar-tab" style="border-bottom: 1px solid #f5f5f5;">
+        <i class="material-icons volver-atras">arrow_back</i>
+
+        <h3 style="margin: 0 0 0 1em !important;">Mi cuenta</h3>
+    </div>
+        
+            <div class="barra-selectora" style="background-color: white !important; box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.05);">
+                <div class="flex-between" style="margin-bottom: .5em;">
+    <p style="word-break: break-all; font-size: .85em; font-family: 'objectivitymedium'; color: #707070; margin: 0;">Filtrar por:</p>
+         <button class="cerrar-tab">X</button>
+    </div>
+   
+
+                <h4 class="titulo-destacado-degrade">Tipo de vehículo</h4>
+                
+                <img  class="avatar slide-bck-bottom" src="http://170.239.87.188/cdn/storage/Images/BBSxyQedGpSA2yXJ6/original/BBSxyQedGpSA2yXJ6.png">
+            </div>
+</div>
+        
+ <div class="page3"> 
+     <div class="barra-menu-sticky flex-start paddinguno cerrar-tab" style="border-bottom: 1px solid #f5f5f5;">
+        <i class="material-icons volver-atras">arrow_back</i>
+
+        <h3 style="margin: 0 0 0 1em !important;">Mi cuenta</h3>
+    </div>
+
+    
+            <div class="barra-selectora" style="background-color: white !important; box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.05);">
+                <div class="flex-between" style="margin-bottom: .5em;">
+    <p style="word-break: break-all; font-size: .85em; font-family: 'objectivitymedium'; color: #707070; margin: 0;">Filtrar por:</p>
+         <button class="cerrar-tab">X</button>
+    </div>
+   
+
+                <h4 class="titulo-destacado-degrade">Tipo de vehículo</h4>
+                <div class="flex-between-top margin-bottom margin-top">
+
+            
+                    <div class="addons-info">
+                        <h5>Reserva inmediata</h5>
+                        <span>Vehículos que puedes reservar directamente, sin esperar a la confirmación del propietario.</span>
+                    </div>
+                </div>
+
+                
+            </div>
+</div>
+        <script>
+        $('.btn02').click(function() {
+    $('.page1').animate({bottom: "0px"}, 200);
+  });
+  
+  $('.volver-atras').click(function() {
+    $('.page1').animate({bottom: "-100vh"}, 200);
+  });
+  $('.btn03').click(function() {
+    $('.page2').animate({left: "0px"}, 200);
+  });
+  
+  $('.volver-atras').click(function() {
+    $('.page2').animate({left: "-120vw"}, 200);
+  });
+
+  $('.btn04').click(function() {
+    $('.page3').animate({right: "0px"}, 200);
+  });
+  
+  $('.volver-atras').click(function() {
+    $('.page3').animate({right: "-120vw"}, 200);
+  });
+      
+        </script>
+        <script src="js/hammer.js"></script>
+         <script src="js/touch-menu-la.js"></script>
+       <script>
+	var TouchMenu = TouchMenuLA({
+		target: document.getElementById('menu')
+	});
+
+	document.getElementById('menu-open').addEventListener('click', function(){
+		TouchMenu.toggle();
+	});
+	</script>
+    </body>
+</html>

@@ -1,0 +1,455 @@
+/*
+Theme Name: 
+Theme URI: http://www..cl/
+Description: 
+Author: Víctor Manuel Gutiérrez
+Author URI: 
+Version: inicial
+*/
+
+/**/
+
+
+/* =============================================================================
+   HTML5 Reset / Display Role
+   ========================================================================== */
+
+    /* HTML5 Boilerplate Reset */
+article, aside, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section { 
+    display:block;
+    -webkit-margin-before: 0;
+-webkit-margin-after: 0;
+-webkit-margin-start: 0;
+-webkit-margin-end: 0;
+}
+	
+
+* {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+iframe,img {max-width:100%}
+
+.flex-center {
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-orient: horizontal;
+	  -webkit-box-direction: normal;
+	  -ms-flex-flow: row wrap;
+	  flex-flow: row wrap;
+	  -webkit-box-align: center;
+	  -ms-flex-align: center;
+	  align-items: center;
+	  -webkit-box-pack: center;
+	  -ms-flex-pack: center;
+	  justify-content: center;
+	}.flex-center-start {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: center;
+	}	.flex-center-column {
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -ms-flex-flow: column wrap;
+	  flex-flow: column wrap;
+	  -webkit-box-align: center;
+	  -ms-flex-align: center;
+	  align-items: center;
+	  -webkit-box-pack: center;
+	  -ms-flex-pack: center;
+	  justify-content: center;
+	}
+
+.flex-between {
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex !important;
+	  -webkit-box-orient: horizontal;
+	  -webkit-box-direction: normal;
+	  -ms-flex-flow: row wrap;
+	  flex-flow: row wrap;
+	  -webkit-box-align: center;
+	  -ms-flex-align: center;
+	  align-items: center;
+	  -webkit-box-pack: justify;
+	  -ms-flex-pack: justify;
+	  justify-content: space-between;
+	}
+
+.flex-arround {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flex-arround-start {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.flex-between-top {
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-orient: horizontal;
+	  -webkit-box-direction: normal;
+	  -ms-flex-flow: row wrap;
+	  flex-flow: row wrap;
+	  -webkit-box-align: start;
+	  -ms-flex-align: start;
+	  align-items: flex-start;
+	  -webkit-box-pack: justify;
+	  -ms-flex-pack: justify;
+	  justify-content: space-between;
+	}
+
+.flex-start {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flex-start-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+margin-tb {
+  margin: 2em 0 1em !important;
+}
+.margin-top {
+  margin-top: 2em  !important;
+}
+.margin-top-1 {
+  margin-top: 1em  !important;
+}
+.margin-bottom {
+  margin-bottom: 2em  !important;
+}.margin-bottom-1 {
+  margin-bottom: 1em  !important;
+}
+.margin-right {
+  margin-right: 2em  !important;
+}
+
+.margin-right-1 {
+  margin-right: 1em  !important;
+}
+
+.paddingdos {
+  padding: 2em !important;
+}
+
+.padding15 {
+  padding: 1.5em !important;
+}
+
+.padding-sb {
+  padding: 1.5em 1.5em 0 !important;
+}
+
+.paddinguno {
+  padding: 1em  !important;
+}
+
+.max-1300 {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+.max-1200 {
+    margin: 0 auto;
+     max-width: 1200px;
+}
+
+.max-1000 {
+    margin: 0 auto;
+     max-width: 1000px;
+}
+/* 
+
+
+=============================================================================
+   FONTS
+   ========================================================================== */
+
+a {
+	color:#0ca8db;
+	text-decoration: none;	
+	}
+	
+a:hover {
+	color:#06C;
+	text-decoration: none;	
+	}
+
+h2, h3, h4, h5 {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#0ca8db;
+}
+
+h1{
+	font-size: 21px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#0ca8db;
+}
+
+h2{
+	font-size: 16px;
+}
+
+h3{
+	font-size: 14px;
+}
+
+h4{
+	font-size: 12px;
+}
+
+h5{
+	font-size: 12px;
+}
+
+/* =============================================================================
+   General Styles
+   ========================================================================== */
+
+body {
+text-align: center;
+	font-size: 100%;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: .3em;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.menu-inferior-movil {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: #fff;
+    text-align: center;
+    -webkit-box-shadow: 0 -2px 4px 0 rgba(47,79,255,.23);
+    box-shadow: 0 -2px 4px 0 rgba(47,79,255,.23);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.menu-inferior-movil span {
+    font-size: .8em;
+    display: block;
+}
+
+.menu-inferior-movil a {
+    color: var(--menu-header,#263238);
+}
+
+a.inferior-movil-active {
+    color: var(--font-h2,#304ffe);
+    font-weight: 600;
+}
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+   /* 320px hasta 480 */
+@media screen and (max-width: 480px) {
+
+}
+
+
+   /* 480px hasta 768 */
+@media screen and (max-width: 768px) {
+
+}
+
+
+   /* 480px hasta 1100 */
+@media screen and (max-width: 1100px) {
+
+}
+
+
+/* =============================================================================
+   Non-Semantic Classes
+   ========================================================================== */
+   
+   /* Custom Selection Styles */
+   ::-moz-selection {background:#D31245;color:#FFF;text-shadow:none;}
+   ::selection {background:#D31245;color:#FFF;text-shadow:none;}
+   ::-webkit-selection {background:#D31245;color:#FFF;text-shadow:none;}
+   ::-moz-selection {background:#D31245;color:#FFF;text-shadow:none;}
+   
+   /* Input focus styles */
+   input:focus {outline:0;border:1px solid #0091BD;} /* Gets rid of blue glow on field focus, adds border color instead */
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+.page-movil-cuenta {
+    background-color: #F6F7FC;
+}
+
+.page-movil-cuenta div {
+    width: 100%;
+    padding: 2em;
+    background-color: white;
+    text-align: left;
+    display: block;
+    margin-bottom: .8em;
+    cursor: pointer;
+}
+
+
+
+div.page1 {
+    background-color: rgba(0, 0, 0, 0.36);
+    text-align: center;
+    bottom: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    z-index: 20;
+    position: fixed;
+    overflow: scroll;
+}
+
+
+div.page2 {
+    background-color: #F6F7FC;
+    text-align: center;
+    left: -120vw;
+    bottom: 0;
+    height: 100%;
+    width: 100vw;
+    z-index: 20;
+    position: fixed;
+    overflow: scroll;
+}
+
+div.page3 {
+    background-color: #F6F7FC;
+    text-align: center;
+    right: -120vw;
+    bottom: 0;
+    height: 100%;
+    width: 100vw;
+    z-index: 20;
+    position: fixed;
+    overflow: scroll;
+}
+
+.barra-selectora {
+    padding: 1em 1em 1em;
+}
+
+.barra-filtrar {
+    padding: 1em 1em 5em;
+    min-height: 100%;
+}
+
+.barra-menu-sticky {
+    padding: 1em 1em 1em;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.nav02{
+       word-break: break-all; font-size: .8em; font-family: 'objectivitybold'; color: #707070; margin: 0; 
+        padding: 6px 10px;
+        border-radius: 50%;
+        background: #f5f5f5;
+        display: block;
+        
+    }
+    
+     .filtrar {
+    position: fixed;
+         background-color: #0000002b;
+        bottom: 6em;
+         left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+        z-index: 20;
+         padding: .5em 1em 1em;
+    color: #777;
+    font-family: 'objectivitymedium';
+    font-size: 1em;
+    display: block;
+    border-radius: 5px;
+    border: none;
+    text-align: left;
+    }
